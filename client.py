@@ -7,7 +7,6 @@ def main(token):
     separator = ""
     for num in range(36):
       separator += "`"
-
   
     user_input = input(f"{separator}\n!quit can be used to exit the chat.\n\nPress 'ENTER' to see new messages.\n\nWould you like to connect now? (Y/N) ").upper()
   
@@ -39,9 +38,7 @@ def main(token):
     for line in chat:
       print(line)
       
-    message = input(f"{token.name}:\n\n\t")
-
-    
+    message = input(f"{token.name}:\n\n\t") 
     chat = open("chat.txt", "a")
   
     if message.lower() == "!quit":
