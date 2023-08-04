@@ -1,5 +1,6 @@
 import replit
 
+
 def main(token):
   loop = True
   while loop:
