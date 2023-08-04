@@ -121,7 +121,7 @@ def create_user():
   file.write(username + ":" + password + "\n")
   file.close()
 
-  print("\nYour account has been successfully created. Please run the program again to login.\n")
+  print("\nYour account has been successfully created. Please run the program again to login or create another account.\n")
 
 # Program starts here
 
