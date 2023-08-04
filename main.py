@@ -1,5 +1,5 @@
 import user
-import importlib
+import client
 
 
 def get_login_type():
@@ -132,12 +132,7 @@ def main():
   if user_choice in ['L', 'LOGIN']:
     token = login_user()
     print(f"Logged in as '{token}'.\n")
-
-    session_file = "client.py"
-    module_name = session_file[0: len(session_file) - 3]
-    user_session = importlib.import_module(module_name)
-
-    user_session.main(token)
+    client.main(token)
 
   else:
     create_user()
