@@ -22,13 +22,7 @@ def main(token):
       print("\nPlease try again.\n")
 
   chat = open("chat.txt", "a")
-
   join_message = f"{token.name} has joined the chat!\n"
-
-  """separator = ""
-  for char in join_message:
-    separator += "~" """
-  
   chat.write('\n' + join_message + '\n')
 
   loop = True
